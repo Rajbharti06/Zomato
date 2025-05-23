@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zomato Clone - Discover the best food & drinks in your area.">
+    <title>Zomato Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://images.seeklogo.com/logo-png/35/1/zomato-logo-png_seeklogo-354338.png" alt="Zomato Logo">
+            </div>
+            <nav>
+                <a href="#">Investor Relations</a>
+                <a href="#">Add Restaurant</a>
+                <a href="#">Login</a>
+                <a href="#">Sign Up</a>
+                <a href="#">Download App</a>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu">
+            <nav>
+                <a href="#">Investor Relations</a>
+                <a href="#">Add Restaurant</a>
+                <a href="#">Login</a>
+                <a href="#">Sign Up</a>
+                <a href="#">Download App</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="overlay"></div>
+            <div class="container">
+                <h2 class="logo-text">Zomato</h2>
+                <h1>Discover the best food & drinks in your area</h1>
+                <div class="search-tab">
+                    <div>
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <input type="text" id="location-input" placeholder="Your Location">
+                    </div>
+                    <div>
+                        <input type="text" id="search-input" placeholder="Search for restaurants, cuisines, or dishes">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button>Order Food</button>
+                    <button>Book a Table</button>
+                    <button>Go Out</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="restaurants">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2>Popular Restaurants</h2>
+                <div class="restaurant-grid">
+                    <div class="restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Spice Garden">
+                        <div class="info">
+                            <h3>Spice Garden</h3>
+                            <p>Indian</p>
+                            <p class="rating">Rating: 4.5 ★</p>
+                        </div>
+                    </div>
+                    <div class="restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Pizza Haven">
+                        <div class="info">
+                            <h3>Pizza Haven</h3>
+                            <p>Italian</p>
+                            <p class="rating">Rating: 4.2 ★</p>
+                        </div>
+                    </div>
+                    <div class="restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c" alt="Sushi Delight">
+                        <div class="info">
+                            <h3>Sushi Delight</h3>
+                            <p>Japanese</p>
+                            <p class="rating">Rating: 4.7 ★</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social">
+            <h2>Follow Us</h2>
+            <div class="icons">
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="copyright-tab">
+        <div class="container">
+            <div class="logo-section">
+                <img src="https://images.seeklogo.com/logo-png/35/1/zomato-logo-png_seeklogo-354338.png" alt="Zomato Logo">
+                <p>© 2025 Zomato Clone | Made with ❤️ for Food Lovers</p>
+            </div>
+            <div class="links">
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

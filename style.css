@@ -1,0 +1,413 @@
+/* General Theme */
+body {
+    background-color: #1a1a1a; /* Dark fallback background to match overlay tone */
+    color: #333; /* Default text color for readability */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat to mimic Okra */
+    font-weight: 400; /* Default weight */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #ff3333; /* Red header background */
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav a {
+    color: #ffffff; /* White text for nav links */
+    text-decoration: none;
+    font-weight: 500; /* Medium weight to match Zomato */
+    font-size: 0.95rem; /* Slightly smaller for Zomato-like look */
+    letter-spacing: 0.5px;
+}
+
+header nav a:hover {
+    color: #ffe6e6; /* Light red on hover */
+}
+
+header .menu-toggle {
+    display: none;
+    color: #ffffff; /* White menu toggle icon */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+/* Mobile Menu */
+#mobile-menu {
+    display: none;
+    background-color: #ff3333; /* Red background for mobile menu */
+}
+
+#mobile-menu.active {
+    display: block;
+}
+
+#mobile-menu nav {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#mobile-menu a {
+    color: #ffffff; /* White text for mobile menu links */
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+#mobile-menu a:hover {
+    color: #ffe6e6; /* Light red on hover */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-attachment: fixed;
+    background-image: url('https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh; /* Use min-height to ensure it covers the viewport */
+    width: 100vw; /* Full viewport width */
+    margin: 0; /* Remove any margins */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+}
+
+.hero .container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.hero .logo-text {
+    font-size: 4rem; /* Large font for Zomato text */
+    font-weight: 700; /* Bold to match Zomato logo */
+    color: #ffffff; /* White to match the original logo color */
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat to mimic Okra */
+    text-transform: uppercase;
+    letter-spacing: 3px; /* Mimic logo spacing */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 300; /* Light weight to match Zomato's heading style */
+    color: #ffffff;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    max-width: 700px; /* Constrain the heading width to a reasonable size */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-tab {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 700px; /* Match the heading's max-width */
+    width: 100%; /* Ensure it takes up the full available width up to max-width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-tab div {
+    background-color: #ffffff; /* White background for contrast */
+    border: 1px solid #ff3333; /* Red border */
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: 0 2px 4px rgba(255, 51, 51, 0.2); /* Red shadow */
+    display: flex;
+    align-items: center;
+    flex: 1; /* Allow the divs to grow equally */
+    min-width: 0; /* Prevent overflow issues */
+}
+
+.search-tab input {
+    color: #333; /* Dark text for readability */
+    background: transparent;
+    border: none;
+    outline: none;
+    flex: 1; /* Allow inputs to grow within their parent div */
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.search-tab button {
+    color: #ff3333; /* Red search icon */
+    background: none;
+    border: none;
+    padding: 0.5rem;
+}
+
+.hero .actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero button {
+    background-color: #ff3333; /* Red background for buttons */
+    color: #ffffff; /* White text */
+    font-weight: 500; /* Medium weight */
+    padding: 0.75rem 1.5rem; /* Larger padding to match Zomato */
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.hero button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Restaurants Section */
+.restaurants {
+    position: relative;
+    background-attachment: fixed;
+    background-image: url('https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    width: 100vw; /* Full viewport width */
+    margin: 0; /* Remove any margins */
+    padding: 3rem 0; /* Adjust padding to avoid content clipping */
+}
+
+.restaurants .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Same overlay as hero section */
+}
+
+.restaurants .content {
+    position: relative;
+    max-width: 1200px; /* Center the content */
+    margin: 0 auto; /* Center the content */
+    padding: 0 1rem; /* Add padding for content */
+    text-align: center;
+}
+
+.restaurants h2 {
+    color: #ffffff; /* White heading for contrast */
+    font-size: 2rem;
+    font-weight: 500; /* Medium weight to match Zomato */
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.restaurant-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for readability */
+    border: 1px solid #ff6666; /* Light red border for cards */
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(255, 51, 51, 0.3); /* Red shadow on hover */
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 192px;
+    object-fit: cover;
+}
+
+.restaurant-card .info {
+    padding: 1rem;
+}
+
+.restaurant-card h3 {
+    font-size: 1.25rem;
+    font-weight: 500; /* Medium weight */
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.restaurant-card p {
+    color: #666;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+}
+
+.restaurant-card .rating {
+    color: #ff3333; /* Red rating */
+    font-weight: 500;
+}
+
+/* Social Section */
+.social {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.social h2 {
+    color: #ff3333; /* Red heading */
+    font-size: 2rem;
+    font-weight: 500; /* Medium weight */
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.social .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social a {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social .facebook { color: #1877f2; } /* Facebook blue */
+.social .facebook:hover { color: #145dbf; }
+
+.social .twitter { color: #1da1f2; } /* Twitter blue */
+.social .twitter:hover { color: #0d8bdb; }
+
+.social .instagram { color: #e1306c; } /* Instagram pink */
+.social .instagram:hover { color: #c13584; }
+
+.social .linkedin { color: #0077b5; } /* LinkedIn blue */
+.social .linkedin:hover { color: #005f8f; }
+
+.social .youtube { color: #ff0000; } /* YouTube red */
+.social .youtube:hover { color: #cc0000; }
+
+/* Footer */
+.copyright-tab {
+    background-color: #ff3333; /* Red background for footer */
+    color: #ffffff; /* White text */
+    padding: 2rem 0;
+    width: 100vw; /* Ensure footer spans full width */
+}
+
+.copyright-tab .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.copyright-tab .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.copyright-tab img {
+    height: 32px;
+}
+
+.copyright-tab p {
+    color: #ffffff; /* White copyright text */
+    margin: 0;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.copyright-tab .links {
+    display: flex;
+    gap: 1rem;
+}
+
+.copyright-tab a {
+    color: #ffe6e6; /* Light red for links */
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.copyright-tab a:hover {
+    color: #ffffff; /* White on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    header .menu-toggle {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+        max-width: 90%; /* Adjust for smaller screens */
+    }
+
+    .hero .logo-text {
+        font-size: 2.5rem;
+    }
+
+    .search-tab {
+        flex-direction: column;
+        max-width: 90%; /* Adjust for smaller screens */
+    }
+
+    .search-tab div {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .hero .actions {
+        flex-direction: column;
+    }
+
+    .copyright-tab .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .copyright-tab .links {
+        flex-direction: column;
+    }
+}
